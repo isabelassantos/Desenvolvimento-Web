@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>DOM e seletores CSS</title>
+        <meta charset="utf-8">
+        <style>
+            h1{
+                background: red;
+            }
+            p[foo]{
+                color: blue;
+            }
+            p[foo="bar"]{
+                background: gray;
+            }
+            p[foo~="bar"]{
+                border: 1px solid black;
+                border-top: 2px;
+            }
+            p:nth-last-child(1){
+                background: purple;
+            }
+        </style>
+        <link rel="stylesheet" href="https://fontawesome.com/icons">
+    </head>
+    <body>
+        <header>
+            <h1>DOM e seletores CSS</h1>
+            <nav>
+                
+            </nav>
+        </header>
+        <main>
+            <p>O html é feito em estrutura de dados tipo árvore</p>
+            <p>Primeiro parágrafo</p>
+            <p foo>Segundo parágrafo</p>
+            <p foo="bar">Terceiro parágrafo</p>
+            <p foo="outro bar outro">Quarto parágrafo</p>
+            <div>
+                <p>primeiro</p>
+                <p>Segundo</p>
+                <p>terceiro</p>
+                <div>
+                    <p>primeiro</p>
+                    <p>Segundo</p>
+                    <p>terceiro</p>
+                </div>
+            </div>
+            <div>
+                <p>primeiro</p>
+                <p>Segundo</p>
+                <p>terceiro</p>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
